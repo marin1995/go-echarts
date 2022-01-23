@@ -3,7 +3,7 @@ package templates
 var BaseTpl = `
 {{- define "base" }}
 <div class="container">
-    <div class="item" id="{{ .ChartID }}" style="width:{{ .Initialization.Width }};height:{{ .Initialization.Height }};"></div>
+    <div class="item" id="{{ .ChartID }}" style="width:{{ .Initialization.Width }};height:{{ .Initialization.Height }};page-break-inside:avoid;"></div>
 </div>
 
 <script type="text/javascript">
